@@ -1,0 +1,10 @@
+{
+  "scripts": {
+    "swagger-cli": "swagger-cli",
+    "validate": "swagger-cli validate src/index.yaml",
+    "bundle": "swagger-cli bundle --type yaml src/index.yaml --outfile"
+  },
+  "devDependencies": {
+    "@apidevtools/swagger-cli": "^4.0.4"
+  }
+}

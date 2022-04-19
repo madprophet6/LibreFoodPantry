@@ -1,0 +1,30 @@
+description: Update item
+requestBody:
+  required: true
+  content:
+    application/json:
+      examples:
+        soup:
+          value:
+            name: Soup
+        tuna:
+          value:
+            name: Tuna
+        bread:
+          value:
+            name: Bread
+      schema:
+        $ref: "../index.yaml#/components/schemas/ItemData"
+responses:
+  "200":
+    description: Item updated
+    content:
+      application/json:
+        schema:
+          $ref: "../index.yaml#/components/schemas/Item"
+  "400":
+    $ref: "../index.yaml#/components/responses/BadRequest"
+  "404":
+    $ref: "../index.yaml#/components/responses/NotFound"
+  "500":
+    $ref: "../index.yaml#/components/responses/ServerError"

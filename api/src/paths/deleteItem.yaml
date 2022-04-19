@@ -1,0 +1,10 @@
+description: Delete item
+responses:
+  "204":
+    description: Item deleted
+  "400":
+    $ref: "../index.yaml#/components/responses/BadRequest"
+  "404":
+    $ref: "../index.yaml#/components/responses/NotFound"
+  "500":
+    $ref: "../index.yaml#/components/responses/ServerError"
