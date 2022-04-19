@@ -1,0 +1,25 @@
+GET http://localhost:10001/items
+###
+GET http://localhost:10001/items?name=turkey
+###
+GET http://localhost:10001/items?name=soup
+###
+GET http://localhost:10001/items?name=chicken
+###
+GET http://localhost:10001/orders
+###
+POST http://localhost:10001/orders HTTP/1.1
+content-type: application/json
+
+{
+  "preferences": "Pineapple, Froot Loops",
+  "restrictions": "Peanut allergy",
+  "items": [
+    {
+      "_id": "0123456789aBcDeF01234567",
+      "name": "Strawberry"
+    }
+  ],
+  "email": "email@example.com"
+}
+

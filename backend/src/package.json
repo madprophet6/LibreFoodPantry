@@ -1,0 +1,24 @@
+{
+  "name": "manage-items-api",
+  "version": "0.1.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "prestart": "npm install",
+    "start": "node index.js"
+  },
+  "keywords": [
+    "openapi"
+  ],
+  "license": "GPL-3.0",
+  "private": true,
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.16.4",
+    "express-openapi-validator": "^4.10.5",
+    "js-yaml": "^4.0.0",
+    "mongodb": "^3.6.2",
+    "swagger-ui-express": "^4.0.2",
+    "winston": "^3.2.1"
+  }
+}
